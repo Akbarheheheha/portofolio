@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="id" class="overflow-x-hidden">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="portofolio.css" />
+  </head>
+  <body class="dark-mode overflow-x-hidden">
+    <button id="naightMode" >☀️ light mode</button>
+    <!-- Navigation -->
+    <nav
+      class="fixed top-0 w-full backdrop-blur-sm z-50 border-b"
+    >
+      <div class="max-w-6xl mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+          <div class="text-2xl font-bold gradient-text">Portfolio</div>
+          <div class="nav-efect hidden md:flex space-x-8">
+            <a
+              href="#home"
+              class="nav-link active text-gray-300 hover:text-white"
+              ><i class="icon-nav fa-solid fa-house"></i> Home</a
+            >
+            <a href="#about" class="nav-link text-gray-300 hover:text-white"
+              ><i class="icon-nav fa-solid fa-circle-user"></i> About Me</a
+            >
+            <a href="#skills" class="nav-link text-gray-300 hover:text-white"
+              ><i class="icon-nav fa-solid fa-gamepad"></i> Skills</a
+            >
+            <a href="#contact" class="nav-link text-gray-300 hover:text-white"
+              ><i class="icon-nav fa-solid fa-phone"></i> Contact</a
+            >
+          </div>
+          <button id="mobile-menu" class="md:hidden ">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div id="mobile-nav" class="hidden md:hidden mt-4 space-y-2">
+          <a href="#home" class="block py-2 text-gray-300 hover:text-white"
+            >Home</a
+          >
+          <a href="#about" class="block py-2 text-gray-300 hover:text-white"
+            >About Me</a
+          >
+          <a href="#skills" class="block py-2 text-gray-300 hover:text-white"
+            >Skills</a
+          >
+          <a href="#contact" class="block py-2 text-gray-300 hover:text-white"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="p">
+      <div
+        class="scroll-section container-home  h-dvh flex items-center justify-between px-6  "
+      >
+        <div
+        
+          class="home-section1 max-w-2xl mx-auto justify-between"
+        >
+          <div class="left-box">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 mt-0">
+              Halo, Saya <span class="gradient-text">Akbarr</span>
+            </h1>
+            <p
+              class="text-xl md:text-2xl text-gray-400 my-8 typing-animation w-fit"
+              id="typing-text"
+            >
+              
+            </p>
+            <p class="my-8">
+              Saya adalah seorang pengembang web yang memiliki semangat tinggi
+              dalam membangun tampilan web yang menarik, fungsional, dan
+              responsif. Fokus utama saya adalah menciptakan pengalaman pengguna
+              yang nyaman dan profesional.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4">
+              <button
+                onclick="scrollToSection('about')"
+                class="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-3 rounded-full font-semibold transition-all duration-300 transform hover:scale-105"
+              >
+                Lihat Portfolio
+              </button>
+              <button
+                onclick="scrollToSection('contact')"
+                class="btn-informasi border border-gray-600 hover:border-gray-400 px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-gray-800"
+              >
+                Hubungi Saya
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          class="home-section2 right-box max-w-2xl bg-gray-900"
+        >
+          <img
+            class=""
+            src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?_gl=1*mhknge*_ga*ODcxMTUyNjcyLjE3NTE1NTIyNzg.*_ga_8JE65Q40S6*czE3NTMxODIzNjYkbzQkZzEkdDE3NTMxODI2MDYkajU5JGwwJGgw"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+        <div  class="">
+          <!-- <h2
+            class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text"
+          >
+            About Me
+          </h2> -->
+          <div class="grid md:grid-cols-2 gap-12 items-center scroll-section">
+            <div class="left-box">
+              <div
+                class="w-80 h-80 mx-auto bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center"
+              >
+                <div class="text-8xl">👨‍💻</div>
+              </div>
+            </div>
+            <div class="right-box space-y-6">
+              <h3 class="text-4xl gradient-text md text-center md:text-5xl font-bold font-bold">about me</h3>
+              <p class="text-gray-400 text-lg leading-relaxed">
+                Saya adalah seorang developer yang bersemangat dalam menciptakan
+                solusi digital inovatif. Dengan pengalaman dalam berbagai
+                teknologi modern, saya selalu berusaha memberikan hasil terbaik
+                untuk setiap proyek yang saya kerjakan.
+              </p>
+              <p class="text-gray-400 text-lg leading-relaxed">
+                Fokus saya adalah pada pengembangan aplikasi web yang responsif,
+                user-friendly, dan memiliki performa tinggi. Saya percaya bahwa
+                teknologi harus dapat memecahkan masalah nyata dan memberikan
+                nilai tambah bagi pengguna.
+              </p>
+              <div class="flex flex-wrap gap-4 mt-8">
+                <span class="skils-smurf bg-gray-800 px-4 py-2 rounded-full text-sm"
+                  >🎯 Problem Solver</span
+                >
+                <span class="skils-smurf bg-gray-800 px-4 py-2 rounded-full text-sm"
+                  >🚀 Innovation Driven</span
+                >
+                <span class="skils-smurf bg-gray-800 px-4 py-2 rounded-full text-sm"
+                  >💡 Creative Thinker</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-skil py-20 px-6 bg-gray-800/50">
+  <div class="max-w-ful mx-auto">
+    <!-- Judul -->
+    <div class="">
+      <div class="">
+        <h2
+          class="animasi-judul text-4xl md:text-5xl font-bold text-center mb-16 gradient-text"
+        >
+          <span>Skills</span>
+        </h2>
+      </div>
+    </div>
+
+    <!-- Grid Skill Cards -->
+    <div class=" grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Frontend Skills -->
+      <div class="scroll-section">
+        <div class="container-skils left-box p-8 rounded-2xl skils-neon">
+          <div class="text-4xl mb-4">🎨</div>
+          <h3 class="text-2xl font-bold mb-6">Frontend</h3>
+          <div class="space-y-4">
+            <div>
+              <p class="persent">HTML <span>90%</span></p>
+              <div class="w-full bg-gray-700 rounded-full h-2.5">
+                <div class="bg-blue-500 h-2.5 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <p class="persent">css <span>85%</span></p>
+              <div class="w-full bg-gray-700 rounded-full h-2.5">
+                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <p class="persent">java script <span>80%</span></p>
+              <div class="w-full bg-gray-700 rounded-full h-2.5">
+                <div class="bg-yellow-400 h-2.5 rounded-full" style="width: 80%"></div>
+              </div>
+            </div>
+            <div>
+              <p class="persent">react <span>0%</span></p>
+              <div class="w-full bg-gray-700 rounded-full h-2.5">
+                <div class="bg-cyan-400 h-2.5 rounded-full" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Backend Skills -->
+      <div class="scroll-section">
+        <div class="container-skils left-box p-8 rounded-2xl skils-neon">
+          <div class="text-4xl mb-4">⚙️</div>
+          <h3 class="text-2xl font-bold mb-6">Backend</h3>
+          <div class="space-y-4">
+            <div>
+              <p class="persent">node js <span>70%</span></p>
+              <div class="w-full bg-gray-700 rounded-full h-2.5">
+                <div class="bg-green-500 h-2.5 rounded-full" style="width: 70%"></div>
+              </div>
+            </div>
+            <div>
+              <p class="persent">expres <span>65%</span></p>
+              <div class="w-full bg-gray-700 rounded-full h-2.5">
+                <div class="bg-green-400 h-2.5 rounded-full" style="width: 65%"></div>
+              </div>
+            </div>
+            <div>
+              <p class="persent">MongoDB <span>60%</span></p>
+              <div class="w-full bg-gray-700 rounded-full h-2.5">
+                <div class="bg-green-300 h-2.5 rounded-full" style="width: 60%"></div>
+              </div>
+            </div>
+            <div>
+              <p class="persent">MySQL <span>65%</span></p>
+              <div class="w-full bg-gray-700 rounded-full h-2.5">
+                <div class="bg-blue-300 h-2.5 rounded-full" style="width: 65%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools & Others -->
+      <div class="scroll-section">
+        <div class="container-skils left-box p-8 rounded-2xl skils-neon">
+          <div class="text-4xl mb-4">🛠️</div>
+          <h3 class="text-2xl font-bold mb-6">Tools & Others</h3>
+          <div class="space-y-4">
+            <div>
+              <p class="persent">git & github <span>90%</span></p>
+              <div class="w-full bg-gray-700 rounded-full h-2.5">
+                <div class="bg-orange-400 h-2.5 rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+            <div>
+              <p class="persent">vs code <span>90%</span></p>
+              <div class="w-full bg-gray-700 rounded-full h-2.5">
+                <div class="bg-blue-400 h-2.5 rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+            <div>
+              <p class="persent">figma <span>70%</span></p>
+              <div class="w-full bg-gray-700 rounded-full h-2.5">
+                <div class="bg-pink-400 h-2.5 rounded-full" style="width: 70%"></div>
+              </div>
+            </div>
+            <div>
+              <p class="persent">linux <span>60%</span></p>
+              <div class="w-full bg-gray-700 rounded-full h-2.5">
+                <div class="bg-gray-400 h-2.5 rounded-full" style="width: 60%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6">
+      <div class="max-w-4xl mx-auto">
+        <div  class="">
+          <h2
+            class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text"
+          >
+            Contact
+          </h2>
+          <div class="scroll-section grid md:grid-cols-2 gap-12">
+            <div class="left-box">
+              <h3 class="text-2xl font-bold mb-6">Mari Berkolaborasi!</h3>
+              <p class="text-gray-400 text-lg mb-8">
+                Saya selalu terbuka untuk proyek baru dan peluang kolaborasi
+                yang menarik. Jangan ragu untuk menghubungi saya!
+              </p>
+              <div class="space-y-4">
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center"
+                  >
+                    📧
+                  </div>
+                  <div>
+                    <p class="font-semibold">Email</p>
+                    <p class="text-gray-400">akbaralfatahrizqi@gmail.com</p>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center"
+                  >
+                    📱
+                  </div>
+                  <div>
+                    <p class="font-semibold">Phone</p>
+                    <p class="text-gray-400">+62 897 8630 225</p>
+                  </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                  <div
+                    class="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full flex items-center justify-center"
+                  >
+                    📍
+                  </div>
+                  <div>
+                    <p class="font-semibold">Location</p>
+                    <p class="text-gray-400">banyuwangi, Indonesia</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container-input right-box p-8 rounded-2xl">
+              <form id="contact-form" class="space-y-6">
+                <div>
+                  <label class="block text-sm font-semibold mb-2">Nama</label>
+                  <input
+                    type="text"
+                    class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                    placeholder="Nama Anda"
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold mb-2">Email</label>
+                  <input
+                    type="email"
+                    class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                    placeholder="email@example.com"
+                  />
+                </div>
+                <div>
+                  <label class="block text-sm font-semibold mb-2">Pesan</label>
+                  <textarea
+                    rows="4"
+                    class="w-full bg-gray-700 border border-gray-600 rounded-lg px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                    placeholder="Tulis pesan Anda..."
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                >
+                  Kirim Pesan
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 px-6 border-t border-gray-700">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="text-gray-400">&copy; 2025 Portfolio. Dibuat dengan ❤️.</p>
+        <div class="flex justify-center space-x-6 mt-4">
+          <a href="#" class="text-gray-400 hover:text-white transition-colors"
+            >GitHub</a
+          >
+          <a href="#" class="text-gray-400 hover:text-white transition-colors"
+            >LinkedIn</a
+          >
+          <a href="#" class="text-gray-400 hover:text-white transition-colors"
+            >Twitter</a
+          >
+        </div>
+      </div>
+    </footer>
+
+
+<script src="portofolio.js"></script>
+
+
+  </body>
+</html>
