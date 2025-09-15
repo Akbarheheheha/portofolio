@@ -146,8 +146,11 @@
   bottom: -20px;
   /* bottom: -5px; */
   left: 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  transition: width 0.3s ease;
+background: linear-gradient(
+        135deg,
+        rgba(59, 130, 246, 0.35) 0%,
+        rgba(147, 51, 234, 0.3) 100%
+      );  transition: width 0.3s ease;
 }
 
 .light-mode .nav-link:hover::after
@@ -165,10 +168,12 @@
   color: #0f172a;
 }
 
-.light-mode .nav-efect:hover a:hover {
+/* .light-mode .nav-efect:hover a:hover {
   opacity: 1;
-  text-shadow: 0 0 5px #667eea, 0 0 10px #667eea;
-}
+  text-shadow: 
+        0 0 5px rgba(59, 130, 246, 0.35) ,
+        0 0 10px rgba(147, 51, 234, 0.3) 
+      ;} */
 
 .light-mode .nav-link:hover::after
 /* ,.nav-link.active::after*/ {
@@ -186,11 +191,20 @@
 
 .light-mode .nav-efect:hover a:hover {
   opacity: 1;
-  text-shadow: 0 0 5px #667eea, 0 0 10px #667eea;
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.65),
+    /* biru (tailwind blue-500) */ 0 0 20px rgba(147, 51, 234, 0.6); /* ungu (tailwind purple-700) */
 }
 
-.light-mode nav a{
+.light-mode nav a {
   color: black;
+}
+
+.light-mode .nama{
+  background: linear-gradient(90deg , rgba(59, 130, 246, 0.35) , rgba(147, 51, 234, 0.3));
+  -webkit-background-clip: text;
+  -webkiit-text-fill-color : transparent ;
+  background-clip: text;
+  color: transparent;
 }
 
 /* Image efek di light mode */
@@ -203,7 +217,8 @@
 
 .light-mode .home-section2 img:hover {
   filter: grayscale(0);
-  box-shadow: 0 0 10px #667eea, 0 0 20px #764ba2, 0 0 40px;
+  box-shadow: 0 4px 5px rgba(59, 130, 246, 0.35), 0 6px 7px rgba(147, 51, 234, 0.3), 0 0 20px;
+
 }
 
 .light-mode .home-section2 {
@@ -235,6 +250,19 @@
   color: #e5e7eb;
 }
 
+.light-mode .container-skils {
+      transition: 300ms ease-in-out;
+    }
+
+    /* Light mode dengan shadow tebal */
+    .light-mode .container-skils:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(135deg, #ffffff, #f3f4f6);
+      box-shadow: 0 20px 40px rgba(59, 130, 246, 0.35),
+        0 25px 60px rgba(147, 51, 234, 0.3);
+      font-weight: 600;
+    }
+
 /* ============================================================================ */
 
 .skill-bar {
@@ -258,10 +286,16 @@
   transition: width 0.3s ease;
 } */
 
-/* .nav-link:hover::after
- ,.nav-link.active::after {
+.nav-link:hover::after
+ ,.nav-link.active::after  {
   width: 100%;
-} */
+}
+
+ .nav-link.active i{
+  opacity: 1;
+ }
+
+
 
 /* .nav-efect a {
   transition: 0.3s ease-in;
